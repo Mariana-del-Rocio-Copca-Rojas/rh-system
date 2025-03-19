@@ -1,0 +1,66 @@
+/* ======= ESTILOS DE LA BARRA DE NAVEGACIÓN ======= */
+.navbar {
+  background-color: rgb(54, 72, 84) !important; /* Color de fondo */
+  height: 70px; /* Altura ajustada de la barra */
+  display: flex;
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente */
+  padding: 0; /* Eliminar espacios extra */
+}
+
+/* ======= ESTILOS DEL LOGO Y TEXTO DE LA MARCA ======= */
+.navbar .navbar-brand {
+  font-size: 12px; /* Tamaño de la fuente del logo/marca */
+  font-weight: bold; /* Fuente en negrita */
+  margin-right: 20px; /* Espaciado derecho */
+}
+
+/* ======= CONTENEDOR DE LAS OPCIONES DEL MENÚ ======= */
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center; /* Alinear elementos dentro del menú */
+  justify-content: center;
+  width: 100%;
+}
+
+/* ======= ESTILO DE LOS BOTONES DEL MENÚ PRINCIPAL ======= */
+.navbar .nav-item {
+  padding: 0 15px; /* Espaciado lateral entre opciones */
+}
+
+/* ======= ESTILO DE LOS ENLACES DEL MENÚ PRINCIPAL ======= */
+.navbar .nav-link {
+  font-size: 12px; /* Tamaño del texto del menú principal */
+  padding: 0px 0px; /* Ajustar altura del área clickeable */
+  color: white !important; /* Color del texto */
+  line-height: 50px; /* Asegurar que el texto se centre verticalmente */
+  display: flex;
+  align-items: center; /* Centrar el texto dentro del enlace */
+}
+
+/* ======= COLOR CUANDO PASA EL MOUSE POR EL MENÚ PRINCIPAL ======= */
+.navbar .nav-link:hover {
+  color: #f1c40f !important; /* Cambia el color al pasar el mouse */
+}
+
+/* ======= ESTILO DEL SUBMENÚ (DESPLEGABLE) ======= */
+.dropdown-menu {
+  background-color: rgb(54, 72, 84); /* Mantener el mismo color de fondo */
+  padding: 5px 10px; /* Reducir el padding vertical del submenú */
+  border: none; /* Eliminar el borde */
+}
+
+/* ======= ESTILO DE LOS ELEMENTOS DEL SUBMENÚ ======= */
+.dropdown-menu .dropdown-item {
+  font-size: 12px; /* Reducir el tamaño del texto del submenú */
+  padding: 5px 10px; /* Ajustar el espacio interno */
+  color: white !important; /* Color del texto */
+  display: flex;
+  align-items: center; /* Centrar el texto dentro del submenú */
+}
+
+/* ======= COLOR CUANDO PASA EL MOUSE POR EL SUBMENÚ ======= */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f1c40f; /* Cambia el fondo */
+  color: black; /* Cambia el color del texto */
+}
