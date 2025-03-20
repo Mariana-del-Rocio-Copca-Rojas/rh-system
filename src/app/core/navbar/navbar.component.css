@@ -46,21 +46,54 @@
 /* ======= ESTILO DEL SUBMENÚ (DESPLEGABLE) ======= */
 .dropdown-menu {
   background-color: rgb(54, 72, 84); /* Mantener el mismo color de fondo */
-  padding: 5px 10px; /* Reducir el padding vertical del submenú */
+  padding: 5px 0; /* Ajuste de padding */
   border: none; /* Eliminar el borde */
+  min-width: 150px; /* Asegurar un tamaño adecuado */
 }
 
 /* ======= ESTILO DE LOS ELEMENTOS DEL SUBMENÚ ======= */
 .dropdown-menu .dropdown-item {
-  font-size: 12px; /* Reducir el tamaño del texto del submenú */
-  padding: 5px 10px; /* Ajustar el espacio interno */
-  color: white !important; /* Color del texto */
+  font-size: 12px; /* Tamaño del texto */
+  padding: 8px 12px; /* Ajustar espacio interno */
+  color: white !important;
   display: flex;
-  align-items: center; /* Centrar el texto dentro del submenú */
+  align-items: center; /* Centrar texto dentro del submenú */
+  width: 100%;
 }
 
 /* ======= COLOR CUANDO PASA EL MOUSE POR EL SUBMENÚ ======= */
 .dropdown-menu .dropdown-item:hover {
-  background-color: #f1c40f; /* Cambia el fondo */
-  color: black; /* Cambia el color del texto */
+  background-color: #f1c40f;
+  color: black;
+}
+
+/* ======= MANTENER VISIBLE EL SUBMENÚ AL PASAR EL MOUSE ======= */
+.dropdown-menu .dropdown {
+  position: relative;
+}
+
+/* ======= Ajuste del submenú dentro del submenú ======= */
+.dropdown-menu .dropdown-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  min-width: 150px;
+}
+
+/* ======= MANTENER ABIERTO EL SUBMENÚ ======= */
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* ======= Asegurar que el submenú sea accesible ======= */
+.dropdown-menu .dropdown-item.dropdown-toggle::after {
+  content: " ▸"; /* Flecha indicando que hay más opciones */
+  float: right;
+}
+
+/* ======= Evitar que el submenú desaparezca antes de llegar a él ======= */
+.dropdown:hover > .dropdown-menu,
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  display: block;
 }
