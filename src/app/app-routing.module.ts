@@ -5,9 +5,9 @@ import { RecordsComponent } from './features/payroll/records/records.component';
 import { AttendanceComponent } from './features/payroll/records/attendance/attendance.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'payroll/records', component: RecordsComponent },
-  { path: 'payroll/records/attendance', component: AttendanceComponent },
+  { path: '', component: HomeComponent }, // Página principal
+  { path: 'payroll/records', component: RecordsComponent }, // Página de Registros
+  { path: 'payroll/records/attendance', component: AttendanceComponent }, // Página de Asistencias
 ];
 
 @NgModule({
